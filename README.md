@@ -15,10 +15,10 @@ For the implementation of this project, several articles were taken and reanalyz
 
 # *Mus Musculus* (Komarova Margarita)
 ## Methods:
--STAR (v2.7.3a) alignment  
--featureCounts (v2.0.1) (getting counts table) 
--DESeq2 (v1.26.0) (gene expression analysis in Rstudio).
--also we use fgsea (v1.12.0) and ClusterProfiler (v3.14.3) packages to identify signal pathways. 
+- STAR (v2.7.3a) alignment
+- featureCounts (v2.0.1) (getting counts table)
+- DESeq2 (v1.26.0) (gene expression analysis in Rstudio)
+- also we use fgsea (v1.12.0) and ClusterProfiler (v3.14.3) packages to identify signal pathways. 
 
 For the first pipline was taken article doi:10.3390/genes11091057. 
 The object of the study in the article is the cell line of murine myoblasts C2C12: wild type (wt_contr) and with a mutation in the LMNA gene (232_contr). The aim of the study in this article was to assess the effect of the mutation on myogenic differentiation C2C12 (wt_HS and 232_HS).
@@ -43,10 +43,10 @@ After STAR, counts are obtained in files with .tab resolution and aligned reads 
 /home/tools/subread-2.0.1-source/bin/featureCounts -T 4 -s 0 -a /mnt4/transciptome_compare/komarova/Mus_musculus.GRCm38.101.gtf -o /mnt4/transciptome_compare/komarova/STAR_alignment/featureCount_results/Counts.txt /mnt4/transciptome_compare/komarova/STAR_alignment/*.out.bam
 ```
 Where is:
--T number of cores
--s these data are "reverse"ly stranded
--a path to annotation
--o output file. The output of this tool is 2 files, a count matrix and a summary file that tabulates how many the reads were “assigned” or counted and the reason they remained “unassigned”.
+- -T number of cores
+- -s these data are "reverse"ly stranded
+- -a path to annotation
+- -o output file. The output of this tool is 2 files, a count matrix and a summary file that tabulates how many the reads were “assigned” or counted and the reason they remained “unassigned”.
 
 ## "Cleaning" of output file
 Unnecessary columns need to be removed.
