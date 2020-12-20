@@ -21,7 +21,13 @@ For the implementation of this project, several articles were taken and reanalyz
 - also we use fgsea (v1.12.0) and ClusterProfiler (v3.14.3) packages to identify signal pathways. 
 
 For the first pipline was taken article doi:10.3390/genes11091057. 
-The object of the study in the article is the cell line of murine myoblasts C2C12: wild type (wt_contr) and with a mutation in the LMNA gene (232_contr). The aim of the study in this article was to assess the effect of the mutation on myogenic differentiation C2C12 (wt_HS and 232_HS).
+The object of the study in the article is the cell line of murine myoblasts C2C12:wild type and with a mutation in the LMNA gene (G232E). The aim of the study in this article was to assess the effect of the mutation on myogenic differentiation C2C12 (HS influence).
+
+Samples (three replicas for each):
+- wt_contr
+- 232_contr
+- wt_HS
+- 232_HS
 
 ## The first step of all piplines was quality assessment of reads using FastQC program (https://www.bioinformatics.babraham.ac.uk/projects/fastqc/).
 
