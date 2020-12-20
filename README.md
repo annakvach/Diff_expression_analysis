@@ -1,8 +1,8 @@
 # Diff_expression_analysis
 Authors:
 - Komarova Margarita
--Gainova Kristina
--Kvach Anna
+- Gainova Kristina
+- Kvach Anna
 
 This repositorium consist description of several pipelines of differential gene expression analysis.
 
